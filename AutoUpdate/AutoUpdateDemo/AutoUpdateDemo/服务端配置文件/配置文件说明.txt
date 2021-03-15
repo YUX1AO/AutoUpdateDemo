@@ -1,0 +1,17 @@
+﻿版本（必填）：您需要在版本标记之间提供应用程序的最新版本。版本应为XXXX格式。
+"version": "2.0.0.0",
+url（必填）：您需要在url标签之间提供最新版本的安装程序文件或zip文件的URL。AutoUpdater.NET将下载此处提供的文件，并在用户按下“更新”按钮时进行安装。
+  "url": "http://rbsoft.org/downloads/AutoUpdaterTest.zip",
+changelog（可选）：您需要在changelog标记之间提供应用程序的更改日志的URL。如果您未提供变更日志的URL，则更新对话框将不会显示变更日志。
+  "changelog": "https://github.com/ravibpatel/AutoUpdater.NET/releases",
+mandatory （可选）：如果您不希望用户跳过此版本，则可以将其设置为true。这将忽略“稍后提醒”和“跳过”选项，并在更新对话框中同时隐藏“跳过”和“稍后提醒”按钮。
+
+模式（属性，可选）：可以在必需元素上提供模式属性以更改强制标志的行为。如果提供“ 1”作为mode属性的值，则它还将在更新对话框中隐藏“关闭”按钮。如果提供“ 2”作为mode属性的值，则它将跳过更新对话框，并自动开始下载和更新应用程序。
+<mandatory mode="2">true</mandatory>
+minVersion（属性，可选）：您也可以在必选元素上使用minVersion属性。提供时，仅当应用程序的安装版本小于您在此处指定的最小版本时，才会触发“强制”选项。
+<mandatory minVersion="1.2.0.0">true</mandatory>
+args（可选）：您可以在此标记之间为Installer提供命令行参数。您可以在命令行参数中包含％path％，它将由当前正在执行的应用程序所在目录的路径替换。
+
+校验和（可选）：您可以在此标记之间提供更新文件的校验和。如果这样做，AutoUpdater.NET将在执行更新过程之前比较下载文件的校验和，以检查文件的完整性。您可以在校验和标记中提供算法属性，以指定应使用哪种算法来生成下载文件的校验和。当前，支持MD5，SHA1，SHA256，SHA384和SHA512。
+
+<checksum algorithm="MD5">Update file Checksum</checksum>

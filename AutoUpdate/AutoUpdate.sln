@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoUpdateDemo", "AutoUpdateDemo\AutoUpdateDemo\AutoUpdateDemo.csproj", "{DDD7EA56-441F-40E9-902C-FF0C3112FC33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileService", "文件服务器\FileService\FileService.csproj", "{E3DDC6FD-205E-4F6B-B332-6B664A8AA5C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDD7EA56-441F-40E9-902C-FF0C3112FC33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD7EA56-441F-40E9-902C-FF0C3112FC33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD7EA56-441F-40E9-902C-FF0C3112FC33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD7EA56-441F-40E9-902C-FF0C3112FC33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3DDC6FD-205E-4F6B-B332-6B664A8AA5C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3DDC6FD-205E-4F6B-B332-6B664A8AA5C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3DDC6FD-205E-4F6B-B332-6B664A8AA5C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3DDC6FD-205E-4F6B-B332-6B664A8AA5C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAB62403-3A43-4039-A5A8-325297D33C4F}
+	EndGlobalSection
+EndGlobal
